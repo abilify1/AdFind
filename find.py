@@ -31,8 +31,8 @@ try:
   ThreadPool(30).map(find,open("list.txt").read().splitlines())
   print "\n%s[%s✓%s] %sDone, file saved in %shasil.txt"%(pu,qu,pu,pu,ku)
 except requests.exceptions.ConnectionError:
-        exit('%s[%s!%s] %sCheck your internet'%(W0,R0,W0,W0))
+        exit('%s[%s!%s] %sCheck your internet'%(pu,qu,pu,pu))
 except IndexError:
-        exit('%s[%s!%s] Use : python2 %s https://domain.com'%(W0,R0,W0,sys.argv[0]))
+        exit('%s[%s!%s] Use : python2 %s https://domain.com'%(pu,qu,pu,sys.argv[0]))
 except KeyboardInterrupt:
-        exit('\n%s[%s!%s] %sClosing...'%(W0,R0,W0,W0))
+        exit('\n%s[%s!%s] %sClosing...'%(pu,qu,pu,pu))
