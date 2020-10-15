@@ -12,7 +12,7 @@ def find(y):
      kont=requests.get(sys.argv[1]+y,timeout=10)
      if kont.status_code < 200 or kont.status_code <= 201:
       print "%s[%s!%s] %s%s ===> %sFound"%(pu,qu,pu,sys.argv[1],y,hi)
-      open("hasil.txt","a+").write(sys.argv[1]+y)
+      open("hasil.txt","a+").write(sys.argv[1]+y+'\n')
      else:
       print "%s[%s!%s] %s%s ===> %sNot Found"%(pu,qu,pu,sys.argv[1],y,me)
     except:
