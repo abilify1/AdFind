@@ -15,8 +15,8 @@ def find(y):
       open("hasil.txt","a+").write(sys.argv[1]+y+'\n')
      else:
       print "%s[%s!%s] %s%s ===> %sNot Found"%(pu,qu,pu,sys.argv[1],y,me)
-    except:
-      pass
+    except Exception as e:
+      print e
 
 try:
   os.system("clear")
