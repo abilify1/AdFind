@@ -23,10 +23,7 @@ def find(y):
 try:
   os.system("clear")
   if 'https' or 'http' not in sys.argv[1]:
-   pek='https://'+sys.argv[1]
-   from urlparse import urlparse
-   eek = urlparse(pek)
-   url=eek.scheme+'://'+eek.netloc
+   url=sys.argv[1]
   else:
    url='https://'+sys.argv[1]
   print """%s
